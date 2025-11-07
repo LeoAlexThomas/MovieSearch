@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --font-Title: Montserrat, sans-serif;
+  --font-SubTitle: "DM Sans", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --color-black-primary: #0b0c10;
+  --color-black-secondary: #1f2833;
+  --color-highlight: #66fcf1;
+  --color-primary-text: #ffffff;
+  --color-secondary-text: #c5c6c7;
+  --color-secondary-button: #45a29e;
+  --color-error: #ff5555;
+}
