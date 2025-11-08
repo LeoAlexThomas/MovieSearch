@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useMovieFilter } from "../Context/movieContext";
+import { useEffect, useState } from "react";
+import { useMovieFilter } from "../Context/MoviesContext";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const MovieFilters = () => {

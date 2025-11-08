@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
-import { useMovieFilter } from "../Context/movieContext";
+import { useMovieFilter } from "../Context/MoviesContext";
 
 const Pagination = ({ totalItems }) => {
   const { pageNumber, setPageNumber } = useMovieFilter();

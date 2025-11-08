@@ -1,6 +1,6 @@
 import React from "react";
 import useApiCall from "../Hooks/useApiCall";
-import { useMovieFilter } from "../Context/movieContext";
+import { useMovieFilter } from "../Context/MoviesContext";
 import ErrorMessage from "./ErrorMessage";
 import Loading from "./Loading";
 import EmptyMessage from "./EmptyMessage";
