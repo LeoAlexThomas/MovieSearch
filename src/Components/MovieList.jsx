@@ -40,9 +40,9 @@ const MovieList = () => {
   }
 
   return (
-    <div className="max-w-[1440px] mx-auto my-4 px-4 flex flex-col gap-4">
-      <h4 className="text-3xl font-bold text-primary-text mt-8">Movies</h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="max-w-[1440px] mx-auto my-8 px-4 flex flex-col gap-4">
+      <h4 className="text-3xl font-bold text-primary-text mt-8 mb-3">Movies</h4>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {item.Search.map((movie) => {
           return (
             <React.Fragment key={movie.imdbID}>

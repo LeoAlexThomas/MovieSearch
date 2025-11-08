@@ -56,7 +56,9 @@ const MovieDetails = () => {
                 </p>
               </div>
             </div>
-            <p className="text-base text-secondary-text">{item.Plot}</p>
+            <p className="text-base text-secondary-text line-clamp-4">
+              {item.Plot}
+            </p>
             {item.Website === "N/A" ? (
               <button className=" w-full max-w-full sm:max-w-[180px] text-black bg-secondary-button rounded-md py-3 font-medium text-center cursor-not-allowed">
                 Play Movie
@@ -76,7 +78,7 @@ const MovieDetails = () => {
       <div className="px-4 mt-4 mb-40 max-w-[1440px] mx-auto flex flex-col gap-6 ">
         <div className="bg-black-secondary rounded-lg overflow-hidden p-4">
           <SectionHead title="More Ratings" />
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
             {item.Ratings.map((rating, index) => {
               return (
                 <React.Fragment key={index}>
@@ -118,8 +120,8 @@ const MovieDetails = () => {
 
 const RatingCard = ({ rating }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-gray-700 my-4 px-4 py-2 w-full rounded-lg">
-      <h6 className="text-lg font-medium">{rating.Source}</h6>
+    <div className="flex flex-col justify-center items-center bg-gray-700 px-4 py-2 w-full rounded-lg">
+      <h6 className="text-lg font-medium text-center">{rating.Source}</h6>
       <p className="text-3xl font-bold">{rating.Value}</p>
     </div>
   );

@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="flex flex-col gap-4 rounded-md bg-black-secondary overflow-hidden pb-4 border border-secondary-button shadow-[0px_0px_10px_2px] hover:shadow-[0px_0px_15px_2px] shadow-secondary-button scale-100 hover:scale-105">
+    <div className="flex flex-col gap-4 rounded-md bg-black-secondary overflow-hidden pb-4 border border-secondary-button hover:shadow-[0px_0px_15px_2px] shadow-secondary-button scale-100 hover:scale-105">
       <div className="bg-gray-700 flex items-center justify-center ">
         <object
           data={
